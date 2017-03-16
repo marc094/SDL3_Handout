@@ -33,6 +33,9 @@ bool ModuleRender::Init()
 	}
 
 	// TODO 9: load a texture "test.png" to test is everything works well
+	tex = App->textures->Load("test.png");
+	if (tex == nullptr)
+		ret = false;
 
 	return ret;
 }
@@ -41,8 +44,10 @@ bool ModuleRender::Init()
 update_status ModuleRender::PreUpdate()
 {
 	// TODO 7: Clear the screen to black before starting every frame
+	SDL_RenderClear(renderer);
 
 	// TODO 10: Blit our test texture to check functionality
+	Blit(tex, 100, 100, nullptr);
 
 	return update_status::UPDATE_CONTINUE;
 }
@@ -50,7 +55,7 @@ update_status ModuleRender::PreUpdate()
 update_status ModuleRender::PostUpdate()
 {
 	// TODO 8: Switch buffers so we actually render
-
+	SDL_RenderPresent(renderer);
 	return update_status::UPDATE_CONTINUE;
 }
 
