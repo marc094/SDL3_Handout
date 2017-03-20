@@ -33,9 +33,9 @@ bool ModuleRender::Init()
 	}
 
 	// TODO 9: load a texture "test.png" to test is everything works well
-	tex = App->textures->Load("test.png");
+	/*tex = App->textures->Load("map1.png");
 	if (tex == nullptr)
-		ret = false;
+		ret = false;*/
 
 	return ret;
 }
@@ -47,7 +47,7 @@ update_status ModuleRender::PreUpdate()
 	SDL_RenderClear(renderer);
 
 	// TODO 10: Blit our test texture to check functionality
-	Blit(tex, 100, 100, nullptr);
+	//Blit(tex, 0, 0, nullptr);
 
 	return update_status::UPDATE_CONTINUE;
 }

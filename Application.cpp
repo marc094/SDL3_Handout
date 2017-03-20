@@ -3,6 +3,8 @@
 #include "ModuleRender.h"
 #include "ModuleInput.h"
 #include "ModuleTextures.h"
+#include "ModuleSound.h"
+#include "Game.h"
 
 Application::Application()
 {
@@ -10,6 +12,8 @@ Application::Application()
 	modules[1] = render = new ModuleRender();
 	modules[2] = input = new ModuleInput();
 	modules[3] = textures = new ModuleTextures();
+	modules[4] = sound = new ModuleSound();
+	modules[5] = game = new Game();
 }	
 
 Application::~Application()

@@ -41,6 +41,12 @@
     <ClInclude Include="Camera.h">
       <Filter>Game Classes</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleSound.h">
+      <Filter>Modules</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -66,6 +72,12 @@
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Game Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleSound.cpp">
+      <Filter>Modules</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
